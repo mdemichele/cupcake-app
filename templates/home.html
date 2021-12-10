@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="cupcake-title-container">
+  <h1 id="cupcake-title">Cupcake App</h1>
+</div>
+
+<div id="cupcake-add-form-container">
+  <form id="cupcake-add-form">
+    
+    <div class="mb-3">
+      <label class="form-label" for="flavor">Flavor</label>
+      <input class="form-control" type="text" name="flavor">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label" for="size">Size</label>
+      <input class="form-control" type="text" name="size">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label" for="rating">Rating</label>
+      <input class="form-control" type="number" name="rating">
+    </div>
+    
+    <div class="mb-3">
+      <label class="form-label" for="image">Image URL</label>
+      <input class="form-control" type="text" name="image">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  
+  </form>
+</div>
+
+<div id="cupcake-list-container">
+  <ul id="cupcake-list">
+    
+  </ul>
+</div>
+{% endblock %}
